@@ -17,13 +17,13 @@
 - Put your name and student number into the sketch comments.
 - Download [this CSV file](HabHYG15ly.csv) to the data folder of your sketch folder. To do this, click the link, click raw and then right click and choose Save As. The file contains data on stars within a distance of 15 light years of the sun. I have removed some entries to make the data easier to visualise. The 0th row gives the column headers. Each row from the file contains lots of information about the star, but we are only interested in the following columns:
 
-| Column | Name | Description |
-|--------|------|-------------|
-| 2	| Hab? | Habitability flag	1 = star has a high probability of hosting a human habitable planet |
-| 3	| DisplayName | The name of the star |
-| 12 | Distance	| Distance from the sun in parsecs |
-| 13, 14, 15 | Xg	Yg	Zg | xyz galactic cartesian co-ordinates in parsecs (used to draw the star map) |
-| 16| AbsMag | Star's size |
+  | Column | Name | Description |
+  |--------|------|-------------|
+  | 2	| Hab? | Habitability flag	1 = star has a high probability of hosting a human habitable planet |
+  | 3	| DisplayName | The name of the star |
+  | 12 | Distance	| Distance from the sun in parsecs |
+  | 13, 14, 15 | Xg	Yg	Zg | xyz galactic cartesian co-ordinates in parsecs (used to draw the star map) |
+  | 16| AbsMag | Star's size |
 
 - Create a class called ```Star``` to encapsulate the columns of interest from a single row from the file. The columns of interest are given in the table above. Feel free to add additional fields if you need them later.
 - Write a constructor that takes a ```TableRow``` as a parameter and assigns the fields in the class from the appropriate columns in the ```TableRow```. You might want to look at [this page from the Processing reference](https://processing.org/reference/TableRow.html) if you need to know how a ```TableRow``` works.

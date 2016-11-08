@@ -12,7 +12,7 @@
 
   [![Video](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](http://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-- Start with a blank sketch. Set the draing window size to be 800 x 800.
+- Start with a blank sketch. Set the drawing window size to be 800 x 800.
 - Name the sketch StarMap and commit it to a new, public git repository on github of the same name.
 - Put your name and student number into the sketch comments.
 - Download [this CSV file](HabHYG15ly.csv) to the data folder of your sketch folder. The data contains information on stars within a distance of 15 light years of the sun. I have removed some entries to make the data easier to visualise. The 0th row gives the column headers. Each row from the file contains lots of information about the star, but we are only interested in the following columns:

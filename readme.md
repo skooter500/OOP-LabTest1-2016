@@ -50,13 +50,13 @@
 
   | Description | Marks |
   |-------------|-------|
-  | Star class  |   10   |
+  | Star class  |   5   |
   | Constructor |  10     |
   | loadData |  10     |
   | printStars |  10     |
   | Drawing the grid | 10  |
   | Plotting the stars | 20 |
-  | Clicking on the stars and calculating the distance | 20 |
+  | Clicking on the stars and calculating the distance | 25 |
   | Correct use of git | 10 |
 
   To get full marks for correct use of git, you must make at least 5 commits, so make a commit every time you get something working.

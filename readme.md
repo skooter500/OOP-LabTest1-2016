@@ -3,7 +3,7 @@
 ## Rules of the test
 - This is an open book test. You can use any of your own sketches, any of the examples from [the course website](https://github.com/skooter500/OOP-2016-2017) or the [Processing reference](https://processing.org/reference/) during the test.
 - No conferring or collaboration.
-- No use of Google, Facebook, Sloack or any any other web resources permitted.
+- No use of Google, Facebook, Slack or any any other web resources permitted.
 - There are marks going for correct use of git, but I recommend that you save regularly and also submit a zipped copy of your test through websourses when you are finished just to be safe.
 
 ## Instructions

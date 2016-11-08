@@ -8,11 +8,13 @@
 
 ## Instructions
 
-- This is the sketch you will be making today:
+- Here is a video of the sketch you will be making today:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J2kHSSFA4NU" frameborder="0" allowfullscreen></iframe>
+[![Video](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](http://www.youtube.com/watch?v=J2kHSSFA4NU)
 
-- Start with a blank sketch. Name it StarMap and commit it to a new, public git repository on github of the same name.
+- Start with a blank sketch. Set the draing window size to be 800 x 800.
+- Name the sketch StarMap and commit it to a new, public git repository on github of the same name.
+- Put your name and student number into the sketch comments.
 - Download [this CSV file](HabHYG15ly.csv) to the data folder of your sketch folder. The data contains information on stars within a distance of 15 light years of the sun. I have removed some entries to make the data easier to visualise. The 0th row gives the column headers. Each row from the file contains lots of information about the star, but we are only interested in the following columns:
 
 | Column | Name | Description |
@@ -23,28 +25,26 @@
 | 13, 14, 15 | Xg	Yg	Zg | xyz galactic cartesian co-ordinates in parsecs (used to draw the star map) |
 | 16| AbsMag | Star's size |
 
-- Create a class called ```Star``` to encapsulate the columns of interest from a single row from the file. The columns of interest are given in the table above.
+- Create a class called ```Star``` to encapsulate the columns of interest from a single row from the file. The columns of interest are given in the table above. Feel free to add additional fields if you need them later.
 - Write a constructor that takes a ```TableRow``` as a parameter and assigns the fields in the class from the appropriate columns in the ```TableRow```. You might want to look at [this page from the Processing reference](https://processing.org/reference/TableRow.html) if you need to know how a ```TableRow``` works.
-- Declare a global ```ArrayList``` of ```Star``` objects
+- Declare a global ```ArrayList``` of ```Star``` objects.
 - Write a method called ```loadData``` that loads the data from the file and populates the ```ArrayList```. Call this from ```setup```.
-- Write a method called printStars that prints the contents of the ArrayList after it has been loaded. You should make a toString method on the Star class to help you do this.
+- Write a method called ```printStars``` that prints the contents of the ```ArrayList``` after it has been loaded. You should make a ```toString``` method on the ```Star``` class to help you do this. Call this from setup after you load the data to make sure it gets loaded correctly.
 - Write code to draw the purple gridlines with labels. You should leave a 50 pixel border around the outside of the drawing window. These gridlines go from -5 parsecs to 5 parsecs on the x and y axis.
 - Write code to plot the stars onto the grid. For each star you should:
 	- Use the star's Xg and Yg values. Ignore the Zg value when drawing the Star.
 	- Draw a yellow cross at the star position on the grid
 	- Draw a red circle with a *diameter* of the star's size.
 	- Print the star name beside the star. The text should be left aligned horizontally and centred vertically.
-- Write code so that you can
-	- Click inside a single star and draw a yellow line to the mouseX and mouseY
+- Write code so that you can:
+	- Click inside a single star and draw a yellow line to the mouse. You can add a mousePressed method to your sketch. This method will get called when the mouse is pressed. Use mouseX and mouseY to determine the mouse coordinates.
 	- When you click a second star, the yellow line should join the two stars and you should print the text:
 
-	Distance from <Star1> to <Star2> is <?> parsecs
+	Distance from STAR1 to STAR2 is XX parsecs
 
-	At the bottom if the screen.
+	At the bottom if the screen. Replace STAR1 with the first clicked star name and STAR2 with the second clicked star name. You should calculate the distance between the two stars using the [dist](https://processing.org/reference/dist_.html) method in Processing. Use the star's Xg, Yg, Zg values to calculate the distance.
 
-	You should calculate the distance between the two stars using the [dist](https://processing.org/reference/dist_.html) method in Processing. Use the star's Xg, Yg, Zg values to calculate the distance.
-
-  Submit the URL of your git repository here. You can also upload a zip file to Webcourses as a backup. I'll check here if I have problems with your git repository.
+  Submit the URL of your git repository [here](https://docs.google.com/forms/d/e/1FAIpQLScZev4_Rlk43RelrMRNHAYPfHAS8gmkKgNn3SnjoRUjxNDodA/viewform). You can also upload a zip file to Webcourses as a backup. I'll check here if I have problems with your git repository.
 
   Marking Scheme:
 

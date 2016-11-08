@@ -10,7 +10,7 @@
 
 - Here is a video of the sketch you will be making today:
 
-[![Video](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](http://www.youtube.com/watch?v=J2kHSSFA4NU)
+  [![Video](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](http://www.youtube.com/watch?v=J2kHSSFA4NU)
 
 - Start with a blank sketch. Set the draing window size to be 800 x 800.
 - Name the sketch StarMap and commit it to a new, public git repository on github of the same name.

@@ -10,10 +10,12 @@
 
 - This is the sketch you will be making today:
 
-- Start with a blank sketch. Name it StarMap and commit it to a new git repository on github of the same name.
-- Download [this CSV file]() to the data folder of your sketch folder. The data contains information on stars within a distance of 15 light years of the sun. I have removed some entries to make the data easier to visualise. The 0th row gives the column headers. Each row from the file contains lots of information about the star, but we are only interested in the following columns:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J2kHSSFA4NU" frameborder="0" allowfullscreen></iframe>
 
-| Column (starting from 0)| Name | Description |
+- Start with a blank sketch. Name it StarMap and commit it to a new, public git repository on github of the same name.
+- Download [this CSV file](HabHYG15ly.csv) to the data folder of your sketch folder. The data contains information on stars within a distance of 15 light years of the sun. I have removed some entries to make the data easier to visualise. The 0th row gives the column headers. Each row from the file contains lots of information about the star, but we are only interested in the following columns:
+
+| Column | Name | Description |
 |--------|------|-------------|
 | 2	| Hab? | Habitability flag	1 = star has a high probability of hosting a human habitable planet |
 | 3	| DisplayName | The name of the star |
@@ -21,10 +23,10 @@
 | 13, 14, 15 | Xg	Yg	Zg | xyz galactic cartesian co-ordinates in parsecs (used to draw the star map) |
 | 16| AbsMag | Star's size |
 
-- Create a class Star to encapsulate the columns of interest from a single row from the file. The columns of interest are given in the table above!
-- Write a constructor that takes a TableRow as a parameter and assigns the fields in the class from the appropriate columns in the TableRow. You might want to look at [this page from the Processing reference](https://processing.org/reference/TableRow.html) if you need to know how a TableRow works.
-- Declare a global ArrayList of Star objects
-- Write a method called loadData that loads the data from the file and populates the ArrayList. Call this from setup.
+- Create a class called ```Star``` to encapsulate the columns of interest from a single row from the file. The columns of interest are given in the table above.
+- Write a constructor that takes a ```TableRow``` as a parameter and assigns the fields in the class from the appropriate columns in the ```TableRow```. You might want to look at [this page from the Processing reference](https://processing.org/reference/TableRow.html) if you need to know how a ```TableRow``` works.
+- Declare a global ```ArrayList``` of ```Star``` objects
+- Write a method called ```loadData``` that loads the data from the file and populates the ```ArrayList```. Call this from ```setup```.
 - Write a method called printStars that prints the contents of the ArrayList after it has been loaded. You should make a toString method on the Star class to help you do this.
 - Write code to draw the purple gridlines with labels. You should leave a 50 pixel border around the outside of the drawing window. These gridlines go from -5 parsecs to 5 parsecs on the x and y axis.
 - Write code to plot the stars onto the grid. For each star you should:
@@ -41,3 +43,20 @@
 	At the bottom if the screen.
 
 	You should calculate the distance between the two stars using the [dist](https://processing.org/reference/dist_.html) method in Processing. Use the star's Xg, Yg, Zg values to calculate the distance.
+
+  Submit the URL of your git repository here. You can also upload a zip file to Webcourses as a backup. I'll check here if I have problems with your git repository.
+
+  Marking Scheme:
+
+  | Description | Marks |
+  |-------------|-------|
+  | Star class  |   10   |
+  | Constructor |  10     |
+  | loadData |  10     |
+  | printStars |  10     |
+  | Drawing the grid | 10  |
+  | Plotting the stars | 20 |
+  | Clicking on the stars and calculating the distance | 20 |
+  | Correct use of git | 10 |
+
+  To get full marks for correct use of git, you must make at least 5 commits, so make a commit every time you get something working.

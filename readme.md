@@ -1,5 +1,7 @@
 # DT228 DT282 Lab Test 1 2016
 
+- [Solution](https://github.com/skooter500/StarMap)
+
 ## Rules of the test
 - This is an open book test. You can use any of your own sketches, any of the examples from [the course website](https://github.com/skooter500/OOP-2016-2017) or the [Processing reference](https://processing.org/reference/) during the test.
 - No conferring or collaboration.
